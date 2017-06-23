@@ -4,5 +4,5 @@ services:
 language: bash
 script:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-  - docker build -t zeiot/rpi-node_exporter:1.0 1.0
-  - docker run zeiot/rpi-node_exporter:1.0 --version
+  - docker build -t zeiot/rpi-kube-state-metrics:1.0 1.0
+  - docker run zeiot/rpi-kube-state-metrics:1.0 --version
