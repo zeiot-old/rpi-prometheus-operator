@@ -21,7 +21,7 @@ build:app:
     - git checkout v${VERSION}
     - ARM=arch make build
     - ls
-    - mkdir binaries/ && cp kube-state-metrics-arm binaries
+    - mkdir binaries/ && cp kube-state-metrics binaries
   artifacts:
     paths:
       - binaries
