@@ -18,7 +18,7 @@ compile:app:
   image: golang:1.9
   script:
     - git clone https://github.com/coreos/prometheus-operator $GOPATH/src/github.com/coreos/prometheus-operator
-    - cd $GOPATH/src/k8s.io/prometheus-operator
+    - cd $GOPATH/src/github.com/coreos/prometheus-operator
     - git checkout v${VERSION}
     - CGO_ENABLED=0 go build -a -tags netgo -o operator github.com/coreos/prometheus-operator/cmd/operator"
     - ls -al
