@@ -12,7 +12,7 @@ stages:
   - build
   - deploy
 
-build:app
+build:app:
   stage: build
   image: golang:1.9
   artifacts:
