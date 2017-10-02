@@ -1,9 +1,6 @@
-# RPI Kube-state-metrics
+# RPI Prometheus Operator
 
-* Master : [![Circle CI](https://circleci.com/gh/zeiot/rpi-kube-state-metrics/tree/master.svg?style=svg)](https://circleci.com/gh/zeiot/rpi-kube-state-metrics/tree/master) [![Build Status](https://travis-ci.org/zeiot/rpi-kube-state-metrics.svg?branch=master)](https://travis-ci.org/zeiot/rpi-kube-state-metrics)
-* Develop : [![Circle CI](https://circleci.com/gh/zeiot/rpi-kube-state-metrics/tree/develop.svg?style=svg)](https://circleci.com/gh/zeiot/rpi-kube-state-metrics/tree/develop) [![Build Status](https://travis-ci.org/zeiot/rpi-kube-state-metrics.svg?branch=develop)](https://travis-ci.org/zeiot/rpi-kube-state-metrics)
-
-Docker image of [kube-state-metrics][] to use on a [Raspberry PI][].
+Docker image of [Prometheus Operator][] to use on a [Raspberry PI][].
 
 Configure binfmt-support on the Docker host (works locally or remotely, i.e: using boot2docker):
 
@@ -39,4 +36,4 @@ Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 
 [Raspberry PI]: https://www.raspberrypi.org/
-[kube-state-metrics]: https://github.com/kubernetes/kube-state-metrics
+[Prometheus Operator]: https://github.com/coreos/prometheus-operator

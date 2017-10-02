@@ -14,7 +14,7 @@
 
 APP=zeiot
 NAMESPACE=$(APP)
-IMAGE=rpi-kube-state-metrics
+IMAGE=rpi-prometheus-operator
 
 NO_COLOR=\033[0m
 OK_COLOR=\033[32;01m

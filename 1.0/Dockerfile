@@ -1,14 +1,14 @@
-# VERSION 1.0.1
+# VERSION 0.13.0
 # AUTHOR:         Nicolas Lamirault <nicolas.lamirault@gmail.com>
 # DESCRIPTION:    zeiot/rpi-prometheus
 
 FROM resin/armv7hf-debian:stretch
 MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
-ENV KUBE_STATE_METRICS_VERSION 1.0.1
+ENV PROMETHEUS_OPERATOR_VERSION 0.13.0
 
-ADD kube-state-metrics-arm /usr/bin/kube-state-metrics
+ADD prometheus-operator /usr/bin/prometheus-operator
 
 EXPOSE 8080
 
-ENTRYPOINT [ "/usr/bin/kube-state-metrics" ]
+ENTRYPOINT [ "/usr/bin/prometheus-operator" ]
