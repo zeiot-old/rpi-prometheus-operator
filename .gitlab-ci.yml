@@ -12,9 +12,6 @@ stages:
   - build
   - deploy
 
-before_script:
-  - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
-
 .job_template: &build_app
   stage: build
   image: golang:1.8
