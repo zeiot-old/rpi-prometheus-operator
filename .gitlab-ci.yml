@@ -15,10 +15,6 @@ stages:
 build:app:
   stage: build
   image: golang:1.9
-  artifacts:
-    expire_in: 2 hrs
-    paths:
-      - linux_arm/kube-state-metrics
   script:
     - git clone https://github.com/kubernetes/kube-state-metrics $GOPATH/src/k8s.io/kube-state-metrics
     - cd $GOPATH/src/k8s.io/kube-state-metrics
@@ -26,7 +22,7 @@ build:app:
     - ls
     - mkdir binaries/ && cp kube-state-metrics-arm binaries
   artifacts:
-    - paths:
+    paths:
       - binaries
 
 development:
