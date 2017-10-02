@@ -1,5 +1,7 @@
 # RPI Prometheus Operator
 
+* Master: [![pipeline status](https://gitlab.com/zeiot/rpi-prometheus-operator/badges/master/pipeline.svg)](https://gitlab.com/zeiot/rpi-prometheus-operator/commits/master)
+
 Docker image of [Prometheus Operator][] to use on a [Raspberry PI][].
 
 Configure binfmt-support on the Docker host (works locally or remotely, i.e: using boot2docker):
