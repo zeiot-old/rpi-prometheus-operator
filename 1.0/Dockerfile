@@ -7,8 +7,6 @@ MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 ENV PROMETHEUS_OPERATOR_VERSION 0.13.0
 
-ADD prometheus-operator /usr/bin/prometheus-operator
+ADD prometheus-operator /usr/bin/operator
 
-EXPOSE 8080
-
-ENTRYPOINT [ "/usr/bin/prometheus-operator" ]
+ENTRYPOINT [ "/usr/bin/operator" ]
