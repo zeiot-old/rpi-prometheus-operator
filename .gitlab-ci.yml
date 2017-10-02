@@ -1,16 +1,22 @@
-image: docker:git
-services:
-  - docker:dind
 
 variables:
   DOCKER_DRIVER: overlay
   VERSION: 1.0.1
 
+image: docker:git
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - deploy
+
 before_script:
   - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
 
 .job_template: &build_app
-  stage: golang
+  stage: build
   image: golang:1.8
   artifacts:
     expire_in: 2 hrs
